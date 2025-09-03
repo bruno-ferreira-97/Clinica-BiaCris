@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
+<script>
+    function abrirWhatsApp() {
+  const numeroTelefone = '5515997507811';
+  const mensagem = 'Olá, gostaria de mais informações!';
+  const mensagemCodificada = encodeURIComponent(mensagem);
+  const urlWhatsApp = `https://wa.me/${numeroTelefone}?text=${mensagemCodificada}`;
+  window.open(urlWhatsApp, '_blank');
+}
+</script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +34,7 @@
             <div class="conteudo-principal-escrito">
                 <h1 class="conteudo-principal-escrito-titulo">Dra Beatriz</h1>
                 <h2 class="conteudo-principal-escrito-subtitulo">Produzir um sorriso é multiplicar a felicidade</h2>
-                <button class="conteudo-principal-escrito-botao">Agende!</button>
+                <button class="conteudo-principal-escrito-botao" onclick="abrirWhatsApp()">Agende!</button>
             </div>
             <img class="conteudo-principal-imagem" src="BalletBot.svg" alt="">
 
