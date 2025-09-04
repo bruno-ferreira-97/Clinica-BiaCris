@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<script>
-    function abrirWhatsApp() {
-  const numeroTelefone = '5515997507811';
-  const mensagem = 'Olá, gostaria de mais informações!';
-  const mensagemCodificada = encodeURIComponent(mensagem);
-  const urlWhatsApp = `https://wa.me/${numeroTelefone}?text=${mensagemCodificada}`;
-  window.open(urlWhatsApp, '_blank');
-}
-</script>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Um bot que irá moderar e deixar a sua comunidade segura de um jeito facil">
     <title>Dra Bia Cris - Agende sua consulta odontologica</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-
+</head>
+<script>
+    function abrirWhatsApp() {
+  const numeroTelefone = '5515997507811';
+  const mensagem = 'Olá, gostaria de mais informações sobre agendamento!';
+  const mensagemCodificada = encodeURIComponent(mensagem);
+  const urlWhatsApp = `https://wa.me/${numeroTelefone}?text=${mensagemCodificada}`;
+  window.open(urlWhatsApp, '_blank');
+    }
+</script>
 <body>
     <header class="cabecalho">
         <img class="imagem-cabecalho" src="img/jpeg-fotor-2025090313491.png" alt="Logo consultorio">
