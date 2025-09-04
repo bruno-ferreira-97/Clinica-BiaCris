@@ -8,24 +8,19 @@
     <title>Dra Bia Cris - Agende sua consulta odontologica</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="comunidade.html">
+    <link rel="stylesheet" href="contato.html">
+    <link rel="stylesheet" href="tratamentos.html">
+    <link rel="stylesheet" href="index.js">
 </head>
-<script>
-    function abrirWhatsApp() {
-  const numeroTelefone = '5515997507811';
-  const mensagem = 'Olá, gostaria de mais informações sobre agendamento!';
-  const mensagemCodificada = encodeURIComponent(mensagem);
-  const urlWhatsApp = `https://wa.me/${numeroTelefone}?text=${mensagemCodificada}`;
-  window.open(urlWhatsApp, '_blank');
-    }
-</script>
 <body>
     <header class="cabecalho">
         <img class="imagem-cabecalho" src="img/jpeg-fotor-2025090313491.png" alt="Logo consultorio">
         <nav class="cabecalho-menu">
-            <a class="cabecalho-menu-item">Comunidade Clinica</a>
-            <a class="cabecalho-menu-item">Tratamentos</a>
-            <a class="cabecalho-menu-item">Conheça mais</a>
-            <a class="cabecalho-menu-item">Contato</a>
+            <a href="comunidade.html" target="_blank" class="cabecalho-menu-item">Comunidade Clinica</a>
+            <a href="tratamentos.html" target="_blank" class="cabecalho-menu-item">Tratamentos</a>
+            <a target="_blank" class="cabecalho-menu-item">Conheça mais</a>
+            <a href="contato.html" target="_blank" class="cabecalho-menu-item">Contato</a>
         </nav>
     </header>
 
