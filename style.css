@@ -114,4 +114,75 @@ body {
     height: 78px;
     display: block;
     margin: 0  auto;
+    
 }
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+/* --- INÍCIO DA RESPONSIVIDADE (MOBILE FIRST/QUEBRA EM 768px) --- */
+
+@media screen and (max-width: 768px) {
+    
+    /* 1. CABEÇALHO (.cabecalho) */
+    .cabecalho {
+        /* Muda de "space-around" para centralizado ou alinhado */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 16px; /* Reduz o padding */
+    }
+
+    /* 2. MENU (.cabecalho-menu) */
+    .cabecalho-menu {
+        flex-direction: column; /* Coloca os links um abaixo do outro */
+        gap: 16px; /* Reduz o espaçamento entre os links */
+        margin-top: 16px; /* Adiciona espaço após o logo */
+        text-align: center;
+    }
+    
+    .cabecalho-menu-item {
+        font-size: 16px; /* Reduz o tamanho da fonte do menu */
+    }
+
+    /* 3. CONTEÚDO PRINCIPAL (.conteudo-principal) */
+    .conteudo-principal {
+        flex-direction: column-reverse; /* Coloca o texto em cima da imagem */
+        justify-content: center;
+        align-items: center;
+        text-align: center; /* Centraliza o texto */
+    }
+    
+    /* 4. TEXTO PRINCIPAL (.conteudo-principal-escrito) */
+    .conteudo-principal-escrito {
+        padding: 30px; /* Adiciona padding nas laterais */
+    }
+
+    .conteudo-principal-escrito-titulo {
+        font-size: 48px; /* Reduz o título principal */
+    }
+
+    .conteudo-principal-escrito-subtitulo {
+        font-size: 18px; /* Reduz o subtítulo */
+    }
+    
+    /* 5. IMAGEM PRINCIPAL (.conteudo-principal-imagem) */
+    .conteudo-principal-imagem {
+        height: auto; /* Permite que a altura seja ajustada */
+        max-width: 80%; /* Limita a largura da imagem */
+        margin-top: 24px;
+    }
+
+    /* 6. CONTEÚDO SECUNDÁRIO */
+    .conteudo-secundario-titulo {
+        padding-top: 32px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .conteudo-secundario-paragrafo {
+        padding: 0 20px; /* Adiciona padding nas laterais dos parágrafos */
+    }
+}
+
+/* --- FIM DA RESPONSIVIDADE --- */
